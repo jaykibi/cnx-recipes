@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,400,500,700&display=swap&subset=latin,latin-ext);
+
+$muli-font: 'Muli', sans-serif;
+$default-font: 'IBM Plex Sans', sans-serif;
+$default-font-color: #000000;
+$default-font-size: 12px;
+
+
+div[data-type="chapter"] {
+    color: $default-font-color;
+    font-family: $default-font;
+    font-size: $default-font-size;
+}
+
+h1[data-type="document-title"] {
+    padding-left: 0.5in;
+    line-height: 0em;
+    
+
+    .os-part-text, .os-number {
+        color: #0074bc;
+        margin-right: 8px;
+        font-weight: bolder;
+        line-height: 1rem;
+        font-family: $muli-font;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+    }
+
+    .os-divider {
+        display: block;
+    }
+
+    .os-text {
+        font-family: $default-font;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: lighter;
+    }
+}
+
+div.os-figure.has-splash {
+    margin-bottom: 1.5rem;
+    
+    .splash {
+        background-color: #0074bc;
+        text-align: right;
+        margin: 0;
+        width: 8.65in;
+
+        img {
+            width: 8.15in;
+            vertical-align: middle;
+        }
+    }
+
+    .os-caption-container {
+        padding: 1rem 30% 2rem 0.5in;
+        box-sizing: border-box;
+        background-color: #eeeae0;
+        font-family: $default-font;
+        width: 8.65in;
+
+        .os-title-label, .os-number {
+            color: #C31427;
+            font-family: $muli-font;
+            font-weight: bold;
+        }
+    }
+}
+
+.intro-body {
+    width: 8.65in;
+    padding-left: 0.5in;
+    margin-bottom: 0.7rem;
+    box-sizing: border-box;
+    display: flex;
+
+    .os-chapter-outline {
+        flex-basis: 2.5in;
+        order: 2;
+        background-color: #0074bc;
+        font-family: $default-font;
+        font-size: 1em;
+        font-weight: 500;
+        margin-right: 0;
+        margin-left: 2rem;
+        padding: 0.5em 0 1.5rem 1.5rem;
+        color: white;
+        
+        a{
+            color: white;
+            text-decoration: none;
+            line-height: 1.5em;
+            padding-right: 30%;
+            text-align: left;
+            display: block;
+        }
+        h3 {
+            border-bottom: white 2px solid;
+            line-height: 2rem;
+        }
+
+
+    }
+
+    .intro-text {
+        flex: 8in;
+        order: 1;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+
+        h2, p {
+            display: inline;
+        }
+
+        .os-text {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+    }
+}
+
+[data-type="page"].chapter-content-module {
+    padding-left: 0.5in;
+
+    h2[data-type="document-title"] {
+        color: #0074bc;
+        font-family: $muli-font;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    h3[data-type="title"] {
+        display: none;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #0074bc;
+        font-family: $muli-font;
+        font-style: italic;
+        font-size: 1.5em;
+        line-height: 1.5rem;
+    }
+
+    ul {
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0px;
+        font-family: $muli-font;
+        font-size: 1rem;
+        list-style-type: none;
+    }
+
+    li::before {
+        content: "• ";
+        color: #0074bc;
+        padding-left: 0px;
+        margin-left: 0; // for PrinceXML, it kept indenting my bullets
+    }
+
+    li {
+        padding-left: 0px;
+        margin-left: 0; // for PrinceXML, it kept indenting my bullets
+    }
+}
