@@ -8,7 +8,7 @@ div[data-type="chapter"] {
 }
 
 h1[data-type="document-title"] {
-  padding-left: 0.5in;
+  padding-left: 1in;
   line-height: 0em;
 }
 
@@ -46,12 +46,12 @@ div.os-figure.has-splash .splash {
 }
 
 div.os-figure.has-splash .splash img {
-  width: 8.15in;
+  width: 7.65in;
   vertical-align: middle;
 }
 
 div.os-figure.has-splash .os-caption-container {
-  padding: 1rem 30% 2rem 0.5in;
+  padding: 1rem 30% 2rem 1in;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #eeeae0;
@@ -67,7 +67,7 @@ div.os-figure.has-splash .os-caption-container .os-title-label, div.os-figure.ha
 
 .intro-body {
   width: 8.65in;
-  padding-left: 0.5in;
+  padding-left: 1in;
   margin-bottom: 0.7rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -128,7 +128,7 @@ div.os-figure.has-splash .os-caption-container .os-title-label, div.os-figure.ha
 }
 
 [data-type="page"].chapter-content-module {
-  padding-left: 0.5in;
+  padding-left: 1in;
 }
 
 [data-type="page"].chapter-content-module h2[data-type="document-title"] {
